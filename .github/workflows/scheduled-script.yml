@@ -64,10 +64,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-      
-      - name: デバッグ用ログのアップロード
-        uses: actions/upload-artifact@v3
-        with:
-          name: execution-logs
-          path: logs/
-          retention-days: 7
