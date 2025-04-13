@@ -17,22 +17,26 @@ jobs:
       - name: Node.jsのセットアップ
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version-file: 'package.json'
           cache: 'npm'
       
+      - name: antfu/niのインストール
+        run: npm install -g @antfu/ni
+      
       - name: 依存関係のインストール
-        run: npm ci
+        run: nci
       
       - name: VRChatインスタンス情報スクリプトの実行
         id: fetch_data
-        run: npm start
+        run: nr start
         env:
           # GitHub Secretsから認証情報を取得
           VRC_AUTH_TOKEN: ${{ secrets.VRC_AUTH_TOKEN }}
           # データディレクトリを指定
           OUTPUT_BASE_DIR: ${{ github.workspace }}
-          # モックレスポンスを有効にする場合は次の行をコメント解除
-          # MOCK_RESPONSE: 'true'
+      
+      - name: lint, format
+        run: nr lint:fix
       
       - name: Git ユーザー設定
         if: env.FILE_CHANGED == 'true'
@@ -66,4 +70,4 @@ jobs:
         with:
           name: execution-logs
           path: logs/
-          retention-days: 7 
+          retention-days: 7

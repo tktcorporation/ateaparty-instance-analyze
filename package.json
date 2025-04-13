@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "定期実行されるTypeScriptスクリプト",
   "main": "src/index.ts",
+  "engines": {
+    "node": ">=22.10.0"
+  },
   "scripts": {
     "start": "tsx src/index.ts",
     "build": "tsc",
