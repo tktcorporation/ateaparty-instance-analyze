@@ -1,0 +1,182 @@
+[
+  {
+    "instanceId": "23067~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:23067~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "memberCount": 7,
+    "world": {
+      "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
+      "authorName": "Agog Admin",
+      "capacity": 60,
+      "created_at": "2024-08-08T19:29:13.619Z",
+      "defaultContentSettings": {},
+      "description": "Welcome to Agog House‚ home of our Community Meetup․ At Agog we support creators and non-profits using immersive media like virtual reality to create human connection‚ cultivate empathy‚ and inspire action toward a more just and sustainable future․ We expand opportunities for emerging creators to use XR for social good․ Immersive world design by Vrium Creative Team ˸ THE SHUSHU and Niko∗",
+      "favorites": 1589,
+      "featured": false,
+      "heat": 5,
+      "id": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c",
+      "imageUrl": "https://api.vrchat.cloud/api/1/file/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/file",
+      "labsPublicationDate": "2024-10-16T17:24:47.049Z",
+      "name": "Agog House",
+      "organization": "vrchat",
+      "popularity": 6,
+      "previewYoutubeId": null,
+      "publicationDate": "2024-10-17T04:42:42.733Z",
+      "recommendedCapacity": 40,
+      "releaseStatus": "public",
+      "tags": [
+        "author_tag_agog",
+        "author_tag_xr",
+        "author_tag_impact",
+        "system_approved"
+      ],
+      "thumbnailImageUrl": "https://api.vrchat.cloud/api/1/image/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/256",
+      "udonProducts": [],
+      "unityPackages": [
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_11bb79f5-b0c9-4d0d-9922-5037f934b8c1/26/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:14:37.386Z",
+          "id": "unp_eee86bd2-0902-4421-b2b6-812f7d4e3866",
+          "platform": "android",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ADKOcTLZcq6CCcLr0uV9D3l+xIMWNo4u+iaQHa/5IbV/eOe24w=="
+        },
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_908bcc59-f029-4cdc-aae8-4a5a544ab1c5/32/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:16:54.083Z",
+          "id": "unp_8e9eaed8-1421-483d-a674-5612a39b911f",
+          "platform": "standalonewindows",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ALFTw6LW1YBbtde/zIHKxOFNXNA2LTvF/4h9HocwwhZ3d0USQg=="
+        }
+      ],
+      "updated_at": "2025-03-25T20:16:54.164Z",
+      "urlList": [],
+      "version": 73,
+      "visits": 24674
+    }
+  },
+  {
+    "instanceId": "36910~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:36910~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "memberCount": 31,
+    "world": {
+      "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
+      "authorName": "Agog Admin",
+      "capacity": 60,
+      "created_at": "2024-08-08T19:29:13.619Z",
+      "defaultContentSettings": {},
+      "description": "Welcome to Agog House‚ home of our Community Meetup․ At Agog we support creators and non-profits using immersive media like virtual reality to create human connection‚ cultivate empathy‚ and inspire action toward a more just and sustainable future․ We expand opportunities for emerging creators to use XR for social good․ Immersive world design by Vrium Creative Team ˸ THE SHUSHU and Niko∗",
+      "favorites": 1589,
+      "featured": false,
+      "heat": 5,
+      "id": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c",
+      "imageUrl": "https://api.vrchat.cloud/api/1/file/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/file",
+      "labsPublicationDate": "2024-10-16T17:24:47.049Z",
+      "name": "Agog House",
+      "organization": "vrchat",
+      "popularity": 6,
+      "previewYoutubeId": null,
+      "publicationDate": "2024-10-17T04:42:42.733Z",
+      "recommendedCapacity": 40,
+      "releaseStatus": "public",
+      "tags": [
+        "author_tag_agog",
+        "author_tag_xr",
+        "author_tag_impact",
+        "system_approved"
+      ],
+      "thumbnailImageUrl": "https://api.vrchat.cloud/api/1/image/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/256",
+      "udonProducts": [],
+      "unityPackages": [
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_11bb79f5-b0c9-4d0d-9922-5037f934b8c1/26/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:14:37.386Z",
+          "id": "unp_eee86bd2-0902-4421-b2b6-812f7d4e3866",
+          "platform": "android",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ADKOcTLZcq6CCcLr0uV9D3l+xIMWNo4u+iaQHa/5IbV/eOe24w=="
+        },
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_908bcc59-f029-4cdc-aae8-4a5a544ab1c5/32/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:16:54.083Z",
+          "id": "unp_8e9eaed8-1421-483d-a674-5612a39b911f",
+          "platform": "standalonewindows",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ALFTw6LW1YBbtde/zIHKxOFNXNA2LTvF/4h9HocwwhZ3d0USQg=="
+        }
+      ],
+      "updated_at": "2025-03-25T20:16:54.164Z",
+      "urlList": [],
+      "version": 73,
+      "visits": 24674
+    }
+  },
+  {
+    "instanceId": "43928~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:43928~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
+    "memberCount": 21,
+    "world": {
+      "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
+      "authorName": "Agog Admin",
+      "capacity": 60,
+      "created_at": "2024-08-08T19:29:13.619Z",
+      "defaultContentSettings": {},
+      "description": "Welcome to Agog House‚ home of our Community Meetup․ At Agog we support creators and non-profits using immersive media like virtual reality to create human connection‚ cultivate empathy‚ and inspire action toward a more just and sustainable future․ We expand opportunities for emerging creators to use XR for social good․ Immersive world design by Vrium Creative Team ˸ THE SHUSHU and Niko∗",
+      "favorites": 1589,
+      "featured": false,
+      "heat": 5,
+      "id": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c",
+      "imageUrl": "https://api.vrchat.cloud/api/1/file/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/file",
+      "labsPublicationDate": "2024-10-16T17:24:47.049Z",
+      "name": "Agog House",
+      "organization": "vrchat",
+      "popularity": 6,
+      "previewYoutubeId": null,
+      "publicationDate": "2024-10-17T04:42:42.733Z",
+      "recommendedCapacity": 40,
+      "releaseStatus": "public",
+      "tags": [
+        "author_tag_agog",
+        "author_tag_xr",
+        "author_tag_impact",
+        "system_approved"
+      ],
+      "thumbnailImageUrl": "https://api.vrchat.cloud/api/1/image/file_c4ed712b-2d33-45d2-bd0d-e65eab81e3fb/4/256",
+      "udonProducts": [],
+      "unityPackages": [
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_11bb79f5-b0c9-4d0d-9922-5037f934b8c1/26/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:14:37.386Z",
+          "id": "unp_eee86bd2-0902-4421-b2b6-812f7d4e3866",
+          "platform": "android",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ADKOcTLZcq6CCcLr0uV9D3l+xIMWNo4u+iaQHa/5IbV/eOe24w=="
+        },
+        {
+          "assetUrl": "https://api.vrchat.cloud/api/1/file/file_908bcc59-f029-4cdc-aae8-4a5a544ab1c5/32/file",
+          "assetVersion": 4,
+          "created_at": "2025-03-25T20:16:54.083Z",
+          "id": "unp_8e9eaed8-1421-483d-a674-5612a39b911f",
+          "platform": "standalonewindows",
+          "unitySortNumber": 20220322000,
+          "unityVersion": "2022.3.22f1",
+          "worldSignature": "ALFTw6LW1YBbtde/zIHKxOFNXNA2LTvF/4h9HocwwhZ3d0USQg=="
+        }
+      ],
+      "updated_at": "2025-03-25T20:16:54.164Z",
+      "urlList": [],
+      "version": 73,
+      "visits": 24674
+    }
+  }
+]

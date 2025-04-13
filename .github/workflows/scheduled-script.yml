@@ -1,4 +1,4 @@
-name: 定期実行スクリプト
+name: VRChat インスタンス情報収集
 
 # スケジュール設定: 毎日午前9時に実行 (UTC)
 on:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # 手動実行も可能
 
 jobs:
-  run-script:
+  fetch-instance-info:
     runs-on: ubuntu-latest
     
     steps:
@@ -23,17 +23,45 @@ jobs:
       - name: 依存関係のインストール
         run: npm ci
       
-      - name: スクリプトの実行
+      - name: VRChatインスタンス情報スクリプトの実行
+        id: fetch_data
         run: npm start
+        env:
+          # GitHub Secretsから認証情報を取得
+          VRC_AUTH_TOKEN: ${{ secrets.VRC_AUTH_TOKEN }}
+          # データディレクトリを指定
+          OUTPUT_BASE_DIR: ${{ github.workspace }}
+          # モックレスポンスを有効にする場合は次の行をコメント解除
+          # MOCK_RESPONSE: 'true'
       
-      # オプション: 実行結果をログに保存する例
-      - name: 実行結果をファイルに保存
+      - name: Git ユーザー設定
+        if: env.FILE_CHANGED == 'true'
         run: |
-          mkdir -p logs
-          npm start > logs/execution-$(date +%Y%m%d-%H%M%S).log
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
       
-      # オプション: 実行ログをアーティファクトとして保存
-      - name: ログをアーティファクトとしてアップロード
+      - name: 変更の確認
+        id: git_status
+        if: env.FILE_CHANGED == 'true'
+        run: |
+          git status --porcelain
+          echo "HAS_CHANGES=$(git status --porcelain | wc -l | xargs)" >> $GITHUB_ENV
+      
+      - name: 変更をコミット
+        if: env.FILE_CHANGED == 'true' && env.HAS_CHANGES != '0'
+        run: |
+          git add data/
+          current_date=$(date '+%Y-%m-%d %H:%M:%S')
+          git commit -m "データ更新: $current_date"
+      
+      - name: GitHubにプッシュ
+        if: env.FILE_CHANGED == 'true' && env.HAS_CHANGES != '0'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      
+      - name: デバッグ用ログのアップロード
         uses: actions/upload-artifact@v3
         with:
           name: execution-logs
