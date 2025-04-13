@@ -2,7 +2,7 @@
   {
     "instanceId": "23067~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
     "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:23067~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
-    "memberCount": 7,
+    "memberCount": 6,
     "world": {
       "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
       "authorName": "Agog Admin",
@@ -62,7 +62,7 @@
   {
     "instanceId": "36910~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
     "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:36910~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
-    "memberCount": 31,
+    "memberCount": 29,
     "world": {
       "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
       "authorName": "Agog Admin",
@@ -122,7 +122,7 @@
   {
     "instanceId": "43928~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
     "location": "wrld_8f7d823e-79a9-4b8f-9efa-c53deeb1d36c:43928~group(grp_e7e50ff7-a7b4-4645-8640-9292957b52fb)~groupAccessType(plus)~region(jp)",
-    "memberCount": 21,
+    "memberCount": 20,
     "world": {
       "authorId": "usr_8ba035f6-63d7-436a-8e10-4587d380074d",
       "authorName": "Agog Admin",
