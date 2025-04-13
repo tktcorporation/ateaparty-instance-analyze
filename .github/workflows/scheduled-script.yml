@@ -1,0 +1,41 @@
+name: 定期実行スクリプト
+
+# スケジュール設定: 毎日午前9時に実行 (UTC)
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC時間の毎日0時（日本時間9時）に実行
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v4
+      
+      - name: Node.jsのセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: 依存関係のインストール
+        run: npm ci
+      
+      - name: スクリプトの実行
+        run: npm start
+      
+      # オプション: 実行結果をログに保存する例
+      - name: 実行結果をファイルに保存
+        run: |
+          mkdir -p logs
+          npm start > logs/execution-$(date +%Y%m%d-%H%M%S).log
+      
+      # オプション: 実行ログをアーティファクトとして保存
+      - name: ログをアーティファクトとしてアップロード
+        uses: actions/upload-artifact@v3
+        with:
+          name: execution-logs
+          path: logs/
+          retention-days: 7 

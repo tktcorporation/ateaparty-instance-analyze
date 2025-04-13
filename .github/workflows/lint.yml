@@ -1,0 +1,60 @@
+name: Lint & Format
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Node.jsのセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 依存関係のインストール
+        run: npm ci
+
+      - name: Biomeによるリンティング
+        run: npm run lint
+
+      - name: Biomeによるフォーマットチェック
+        run: npm run format
+
+  format:
+    runs-on: ubuntu-latest
+    # mainブランチへのプッシュ時やPRの場合は自動修正を行う
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: lint
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Node.jsのセットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 依存関係のインストール
+        run: npm ci
+
+      - name: Biomeによるフォーマット修正
+        run: npm run format:fix
+
+      - name: Biomeによるリント修正
+        run: npm run lint:fix
+
+      - name: 修正があれば自動コミット
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "style: Biomeによる自動フォーマット修正"
+          file_pattern: "." 
